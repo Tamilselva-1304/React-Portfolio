@@ -1,0 +1,38 @@
+.resume-button {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 999;
+  cursor: pointer !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #6c5ce7;
+  background-color: #c3c3c33d;
+  color: #d3d3d3;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.4);
+
+  .download-icon {
+    font-size: 1rem;
+  }
+
+  span {
+    cursor: pointer !important;
+  }
+
+  &:hover {
+    background: #a29bfe;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(108, 92, 231, 0.5);
+  }
+}
+
+#resume {
+  cursor: pointer !important;
+}

@@ -1,0 +1,353 @@
+.contact-page {
+  position: relative;
+  padding: 6.5rem 2rem;
+  background: #0b0c1b;
+  color: #fff;
+  overflow: hidden;
+
+  .page-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+
+    span {
+      color: #a78bfa;
+    }
+  }
+
+  .contact-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 700px;
+    box-sizing: border-box;
+
+    input,
+    textarea {
+      padding: 0.8rem 1rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      resize: none;
+      background: #fff;
+      color: #000;
+    }
+
+    button {
+      padding: 0.8rem 1rem;
+      border: none;
+      border-radius: 8px;
+      background: #a78bfa;
+      color: #fff;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: #8b5cf6;
+      }
+    }
+  }
+
+  .map-container {
+    height: 400px;
+    width: 100%;
+    max-width: 700px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(167, 139, 250, 0.4);
+  }
+
+  .rocket,
+  .rocket1,
+  .rocket2,
+  .rocket3,
+  .rocket4,
+  .rocket5,
+  .rocket6,
+  .rocket7,
+  .rocket8,
+  .rocket9,
+  .rocket10,
+  .rocket11,
+  .rocket12,
+  .rocket13,
+  .rocket14 {
+    position: absolute;
+    width: 60px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    bottom: -60px; /* Starting position below the screen */
+  }
+
+  .rocket {
+    animation: rocketFly 12s linear infinite;
+  }
+
+  @keyframes rocketFly {
+    0% {
+      transform: translateX(-100vw) translateY(0) rotate(45deg);
+    }
+    50% {
+      transform: translateX(50vw) translateY(-50vh) rotate(90deg);
+    }
+    100% {
+      transform: translateX(120vw) translateY(100vh) rotate(180deg);
+    }
+  }
+
+  .rocket1 {
+    animation: rocketFly1 14s linear infinite;
+  }
+
+  @keyframes rocketFly1 {
+    0% {
+      transform: translateX(100vw) translateY(0) rotate(45deg);
+    }
+    50% {
+      transform: translateX(-50vw) translateY(50vh) rotate(-45deg);
+    }
+    100% {
+      transform: translateX(-120vw) translateY(100vh) rotate(-90deg);
+    }
+  }
+
+  /* Rocket 3 */
+  .rocket2 {
+    animation: rocketFly2 16s linear infinite;
+  }
+
+  @keyframes rocketFly2 {
+    0% {
+      transform: translateX(0) translateY(-100vh) rotate(0deg);
+    }
+    50% {
+      transform: translateX(50vw) translateY(50vh) rotate(180deg);
+    }
+    100% {
+      transform: translateX(-100vw) translateY(120vh) rotate(90deg);
+    }
+  }
+
+  /* Rocket 4 */
+  .rocket3 {
+    animation: rocketFly3 18s linear infinite;
+  }
+
+  @keyframes rocketFly3 {
+    0% {
+      transform: translateX(100vw) translateY(100vh) rotate(30deg);
+    }
+    50% {
+      transform: translateX(0) translateY(0) rotate(135deg);
+    }
+    100% {
+      transform: translateX(-120vw) translateY(-100vh) rotate(-30deg);
+    }
+  }
+
+  /* Rocket 5 */
+  .rocket4 {
+    animation: rocketFly4 20s linear infinite;
+  }
+
+  @keyframes rocketFly4 {
+    0% {
+      transform: translateX(-100vw) translateY(0) rotate(90deg);
+    }
+    50% {
+      transform: translateX(50vw) translateY(-30vh) rotate(45deg);
+    }
+    100% {
+      transform: translateX(120vw) translateY(80vh) rotate(180deg);
+    }
+  }
+
+  /* Rocket 6 */
+  .rocket5 {
+    animation: rocketFly5 22s linear infinite;
+  }
+
+  @keyframes rocketFly5 {
+    0% {
+      transform: translateX(100vw) translateY(-50vh) rotate(60deg);
+    }
+    50% {
+      transform: translateX(0) translateY(50vh) rotate(-60deg);
+    }
+    100% {
+      transform: translateX(-100vw) translateY(100vh) rotate(90deg);
+    }
+  }
+
+  /* Rocket 7 */
+  .rocket6 {
+    animation: rocketFly6 24s linear infinite;
+  }
+
+  @keyframes rocketFly6 {
+    0% {
+      transform: translateX(-100vw) translateY(0) rotate(45deg);
+    }
+    50% {
+      transform: translateX(50vw) translateY(-80vh) rotate(120deg);
+    }
+    100% {
+      transform: translateX(120vw) translateY(120vh) rotate(180deg);
+    }
+  }
+
+  /* Rocket 8 */
+  .rocket7 {
+    animation: rocketFly7 26s linear infinite;
+  }
+
+  @keyframes rocketFly7 {
+    0% {
+      transform: translateX(120vw) translateY(-50vh) rotate(-45deg);
+    }
+    50% {
+      transform: translateX(-50vw) translateY(70vh) rotate(30deg);
+    }
+    100% {
+      transform: translateX(100vw) translateY(120vh) rotate(-30deg);
+    }
+  }
+
+  /* Rocket 9 */
+  .rocket8 {
+    animation: rocketFly8 28s linear infinite;
+  }
+
+  @keyframes rocketFly8 {
+    0% {
+      transform: translateX(0) translateY(-150vh) rotate(0deg);
+    }
+    50% {
+      transform: translateX(100vw) translateY(60vh) rotate(90deg);
+    }
+    100% {
+      transform: translateX(-100vw) translateY(150vh) rotate(180deg);
+    }
+  }
+
+  /* Rocket 10 */
+  .rocket9 {
+    animation: rocketFly9 30s linear infinite;
+  }
+
+  @keyframes rocketFly9 {
+    0% {
+      transform: translateX(-100vw) translateY(0) rotate(90deg);
+    }
+    50% {
+      transform: translateX(50vw) translateY(-40vh) rotate(135deg);
+    }
+    100% {
+      transform: translateX(120vw) translateY(70vh) rotate(180deg);
+    }
+  }
+
+  /* Rocket 11 */
+  .rocket10 {
+    animation: rocketFly10 32s linear infinite;
+  }
+
+  @keyframes rocketFly10 {
+    0% {
+      transform: translateX(120vw) translateY(0) rotate(45deg);
+    }
+    50% {
+      transform: translateX(50vw) translateY(-60vh) rotate(30deg);
+    }
+    100% {
+      transform: translateX(-120vw) translateY(100vh) rotate(-60deg);
+    }
+  }
+
+  /* Rocket 12 */
+  .rocket11 {
+    animation: rocketFly11 34s linear infinite;
+  }
+
+  @keyframes rocketFly11 {
+    0% {
+      transform: translateX(50vw) translateY(-50vh) rotate(180deg);
+    }
+    50% {
+      transform: translateX(-50vw) translateY(50vh) rotate(90deg);
+    }
+    100% {
+      transform: translateX(100vw) translateY(120vh) rotate(0deg);
+    }
+  }
+
+  /* Rocket 13 */
+  .rocket12 {
+    animation: rocketFly12 36s linear infinite;
+  }
+
+  @keyframes rocketFly12 {
+    0% {
+      transform: translateX(-120vw) translateY(0) rotate(45deg);
+    }
+    50% {
+      transform: translateX(70vw) translateY(-30vh) rotate(-45deg);
+    }
+    100% {
+      transform: translateX(100vw) translateY(100vh) rotate(180deg);
+    }
+  }
+
+  /* Rocket 14 */
+  .rocket13 {
+    animation: rocketFly13 38s linear infinite;
+  }
+
+  @keyframes rocketFly13 {
+    0% {
+      transform: translateX(0) translateY(-80vh) rotate(180deg);
+    }
+    50% {
+      transform: translateX(80vw) translateY(50vh) rotate(60deg);
+    }
+    100% {
+      transform: translateX(-100vw) translateY(120vh) rotate(-90deg);
+    }
+  }
+
+  /* Rocket 15 */
+  .rocket14 {
+    animation: rocketFly14 40s linear infinite;
+  }
+
+  @keyframes rocketFly14 {
+    0% {
+      transform: translateX(100vw) translateY(0) rotate(120deg);
+    }
+    50% {
+      transform: translateX(-30vw) translateY(-60vh) rotate(150deg);
+    }
+    100% {
+      transform: translateX(120vw) translateY(80vh) rotate(60deg);
+    }
+  }
+}

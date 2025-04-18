@@ -1,0 +1,35 @@
+.circular-progress {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  margin: 20px;
+
+  svg {
+    transform: rotate(-90deg);
+  }
+
+  circle {
+    transition: stroke-dashoffset 1s ease;
+  }
+
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    span {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    small {
+      display: block;
+      font-size: 0.85rem;
+      color: #ccc;
+    }
+  }
+}
